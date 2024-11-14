@@ -1,0 +1,51 @@
+{
+    "seed": 42,
+    "model": {
+        "model_name": "llama-3.1-8b",
+        "model_path": "../models/llama-3.1-8b [MODIFY THIS, this needs to be a local model path]",
+        "device": "cuda:0",
+        "batch_size": 4,
+        "num_train_epochs": 10,
+        "warmup_steps": 500,
+        "weight_decay": 0.01,
+        "learning_rate": 5e-5,
+        "logging_steps": 100,
+        "logging_dir": "./logs/finetune-logs/",
+        "output_dir": "./logs/finetune-model/",
+        "lora": {
+            "r": 16,
+            "lora_alpha": 32,
+            "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "down_proj", "up_proj"],
+            "lora_dropout": 0.1,
+            "bias": "none"
+        },
+        "suffix_logs": "./logs/suffix-logs.out"
+    },
+    "inference": {
+        "max_length": 256,
+        "num_return_sequences": 1,
+        "temperature": 0.9,
+        "top_p": 0.85,
+        "repetition_penalty": 1.0,
+        "length_penalty": 1.0,
+        "max_suffix_length": 25
+    },
+    "orpo-training": {
+        "beta": 0.25,
+        "num_train_epochs": 15,
+        "warmup_steps": 500,
+        "weight_decay": 0.01,
+        "learning_rate": 2e-4,
+        "logging_steps": 100,
+        "logging_dir": "./logs/orpo-logs/",
+        "output_dir": "./logs/orpo-model/",
+        "batch_size": 1,
+        "lora": {
+            "r": 16,
+            "lora_alpha": 32,
+            "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "down_proj", "up_proj"],
+            "lora_dropout": 0.1,
+            "bias": "none"
+        }
+    }
+}

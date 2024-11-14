@@ -1,0 +1,15 @@
+{
+    "seed": 42,
+    "black_box_model": {
+        "model": "mistral [MODIFY THIS]",
+        "model_path": "../models/mistral [MODIFY THIS, leave empty if not applicable]",
+        "provider": "huggingface [MODIFY THIS, we support openai / huggingface]",
+        "device": "cuda:2",
+        "logging_file": "./logs/blackbox-logs.out"
+    },
+    "black_box_params": {
+        "temperature": 0.9, 
+        "max_length": 250,
+        "top_p": 0.95
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "HF_API_KEY": "[MODIFY THIS]",
+    "OPENAI_API_KEY": "[MODIFY THIS]",
+    "lbo_params": {
+        "acquisition_function": "EI [MODIFY THIS, we support EI / PI / LCB]",
+        "n_calls": 6,
+        "seed": 42,
+        "acq_optimizer": "sampling",
+        "n_initial_points": 2,
+        "searches": 2
+    },
+    "inference_logs": "./logs/inference-logs.out",
+    "epochs": 10,
+    "infer_save": "./logs/inference.csv",
+    "dataset": {
+        "name": "gasp-dataset",
+        "data_path": "./data/advsuffixes/advsuffixes.csv",
+        "split": 0.75
+    },
+    "eval_dataset": {
+        "name": "gasp-eval",
+        "data_path": "./data/advsuffixes/advsuffixes_eval.txt"
+    },
+    "eval_logs": "./logs/eval-logs.out",
+    "eval_max_suffix_additions": 10,
+    "orpo_finetune": false,
+    "orpo_num_prompts": 10
+}

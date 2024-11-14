@@ -1,0 +1,17 @@
+{
+    "seed": 42,
+    "gaspeval_msg": "./data/gaspeval_evaluator_prompt.task",
+    "strongreject_msg": "./data/strongreject_evaluator_prompt.task",
+    "evaluator_model": {
+        "model": "llama3.1-8b [MODIFY THIS]",
+        "model_path": "../models/llama3.1-8b [MODIFY THIS, leave empty if not applicable]",
+        "provider": "huggingface [MODIFY THIS, we support openai / huggingface]",
+        "device": "cuda:1",
+        "logging_file": "./logs/evaluator-logs.out"
+    },
+    "evaluator_params": {
+        "temperature": 0.9, 
+        "max_length": 2500,
+        "top_p": 0.95
+    }
+}
