@@ -44,8 +44,8 @@ Please review all configuration settings with **"[MODIFY THIS]"** in the field v
 
 ### Additional Evaluation Parameters
 - **eval_max_suffix_additions**: Maximum suffix additions allowed during evaluation.
-- **orpo_finetune**: Boolean flag to enable or disable ORPO fine-tuning.
-- **orpo_num_prompts**: Number of prompts used in ORPO fine-tuning.
+- **orpo_finetune**: Boolean flag to enable or disable ORPO fine-tuning (during evaluation) -- recommended to be false; all experiments were ran on this setting.
+- **orpo_num_prompts**: Number of prompts used for ORPO fine-tuning (during evaluation).
 
 ---
 

@@ -47,5 +47,9 @@ Our source code is under the GNU General Public License v3.0.
 ## 4. Authors
 Authors and contributors would be added here after acceptance.
 
+## 5. Ethical Statement
+Our research and the development of GASP are driven by the commitment to advancing the understanding of LLM vulnerabilities. While GASP enables the efficient generation of coherent adversarial suffixes, it is worth noting that manual methods for jailbreaking LLMs have already been widely accessible. Our research seeks to formalize and characterize these vulnerabilities rather than introduce novel threats. 
+
+In alignment with responsible disclosure practices, we have shared our findings with relevant organizations whose models were tested in this study and transparently disclosed all of our findings. 
 
 
